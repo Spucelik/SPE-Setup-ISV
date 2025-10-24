@@ -18,7 +18,9 @@ SharePoint Embedded enables ISVs to build multi-tenant applications with dedicat
 ├── docs/
 │   ├── azure-app-registration.md    # Detailed Azure App Registration steps
 │   ├── admin-consent.md             # Admin consent process
-│   └── troubleshooting.md           # Common issues and solutions
+│   ├── troubleshooting.md           # Common issues and solutions
+│   ├── quick-reference.md           # Quick reference guide with commands
+│   └── example-walkthrough.md       # Complete real-world example
 ├── scripts/
 │   ├── Register-SPEOwningApp.ps1    # Register owning app in consuming tenant
 │   └── New-SPEContainer.ps1         # Create SharePoint Embedded container
@@ -99,6 +101,8 @@ Once the owning app is registered, create containers:
 - **[Azure App Registration Guide](docs/azure-app-registration.md)** - Complete walkthrough of creating and configuring the Azure App Registration
 - **[Admin Consent Process](docs/admin-consent.md)** - How to obtain and verify admin consent from customer tenants
 - **[Troubleshooting Guide](docs/troubleshooting.md)** - Common issues and their solutions
+- **[Quick Reference Guide](docs/quick-reference.md)** - Essential commands and quick lookup information
+- **[Example Walkthrough](docs/example-walkthrough.md)** - Complete real-world scenario from start to finish
 
 ## Scripts
 
