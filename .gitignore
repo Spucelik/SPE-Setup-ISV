@@ -1,0 +1,11 @@
+# Certificate files
+*.pfx
+*.cer
+*.pem
+
+# Test output
+test-output/
+temp/
+
+# PowerShell temporary files
+*.ps1~
