@@ -1,0 +1,66 @@
+# Certificate files - NEVER commit these!
+*.pfx
+*.p12
+*.cer
+*.crt
+*.key
+*.pem
+
+# Sensitive configuration
+config.json
+appsettings.json
+.env
+*.config
+
+# Passwords and secrets
+secrets.txt
+passwords.txt
+credentials.txt
+
+# PowerShell credential files
+*.cred
+*.credential
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PowerShell
+*.ps1xml
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Documentation build outputs
+docs/_build/
+site/
