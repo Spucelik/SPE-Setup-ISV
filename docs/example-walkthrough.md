@@ -76,7 +76,7 @@ $cert = New-SelfSignedCertificate `
     -NotAfter (Get-Date).AddYears(2)
 
 # Export PFX (with private key)
-$certPassword = ConvertTo-SecureString -String "C0nt0s0Secure!2024" -Force -AsPlainText
+$certPassword = ConvertTo-SecureString -String "YOUR_SECURE_PASSWORD_HERE" -Force -AsPlainText
 Export-PfxCertificate `
     -Cert $cert `
     -FilePath "C:\Contoso\ContosoDocMgr.pfx" `
@@ -270,7 +270,7 @@ cd C:\Contoso\SPE-Setup-ISV\scripts
 .\Register-SPEOwningApp.ps1 `
     -OwningAppId "12345678-90ab-cdef-1234-567890abcdef" `
     -CertificatePath "C:\Contoso\ContosoDocMgr.pfx" `
-    -CertificatePassword "C0nt0s0Secure!2024" `
+    -CertificatePassword "YOUR_SECURE_PASSWORD_HERE" `
     -ConsumingTenantId "fabrikam.onmicrosoft.com" `
     -ConsumingTenantAdminUrl "https://fabrikam-admin.sharepoint.com" `
     -ContainerTypeDisplayName "Contoso Document Manager Containers"
@@ -350,7 +350,7 @@ cd C:\Contoso\SPE-Setup-ISV\scripts
     -Description "Human Resources department document repository" `
     -OwningAppId "12345678-90ab-cdef-1234-567890abcdef" `
     -CertificatePath "C:\Contoso\ContosoDocMgr.pfx" `
-    -CertificatePassword "C0nt0s0Secure!2024" `
+    -CertificatePassword "YOUR_SECURE_PASSWORD_HERE" `
     -ConsumingTenantId "fabrikam.onmicrosoft.com" `
     -SetPermissions `
     -Owners "hr-admin@fabrikam.com" `

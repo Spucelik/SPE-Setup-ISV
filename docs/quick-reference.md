@@ -45,7 +45,7 @@ $cert = New-SelfSignedCertificate `
     -NotAfter (Get-Date).AddYears(2)
 
 # Export certificate
-$certPassword = ConvertTo-SecureString -String "YourPassword123!" -Force -AsPlainText
+$certPassword = ConvertTo-SecureString -String "YOUR_SECURE_PASSWORD_HERE" -Force -AsPlainText
 Export-PfxCertificate -Cert $cert -FilePath ".\SPEmbeddedApp.pfx" -Password $certPassword
 Export-Certificate -Cert $cert -FilePath ".\SPEmbeddedApp.cer"
 
